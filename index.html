@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - 2048 Beta 2.0</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<head>
+  <title>2048</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+  <h1> 2048 </h1>
+  <h2 class="header">Score: <span id="score"></span></h2>
+  <h2 class="header">Highest Score: <span id="highestScore"> </span></h2>
+  <div id = "board">
+    <!-- Row 1-->
+    <div id = "block00"></div>
+    <div id = "block01"></div>
+    <div id = "block02"></div>
+    <div id = "block03"></div>
+    <!-- Row 2-->
+    <div id = "block10"></div>
+    <div id = "block11"></div>
+    <div id = "block12"></div>
+    <div id = "block13"></div>
+    <!-- Row 3-->
+    <div id = "block20"></div>
+    <div id = "block21"></div>
+    <div id = "block22"></div>
+    <div id = "block23"></div>
+    <!-- Row 4-->
+    <div id = "block30"></div>
+    <div id = "block31"></div>
+    <div id = "block32"></div>
+    <div id = "block33"></div>
+  </div>
+  
+  <div id = "gameOver">
+    <p> 
+      Game Over! <br/>
+      Score: <span id = "finalScore"> 0 </span> <br/>
+    </p>
+    <button class="button button1" onclick="tryAgain()">Try again!</button>
+  </div>
+  
+  <div id = "pause"></div>
+      
+</body>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
