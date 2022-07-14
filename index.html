@@ -1,19 +1,10 @@
-<!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>CodePen - 2048 Beta 2.0</title>
-  <link rel="stylesheet" href="./style.css">
-
-</head>
-<body>
-<!-- partial:index.partial.html -->
 <head>
   <title>2048</title>
   <meta charset="UTF-8">
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/@mdi/font@6.x/css/materialdesignicons.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
 </head>
 <body>
   <h1> 2048 </h1>
@@ -47,15 +38,17 @@
       Game Over! <br/>
       Score: <span id = "finalScore"> 0 </span> <br/>
     </p>
-    <button class="button button1" onclick="tryAgain()">Try again!</button>
+    <v-btn id="button" elevation="2" large outlined onclick="tryAgain()">Try again!</v-btn>
   </div>
   
   <div id = "pause"></div>
-      
+  
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+  <script>
+    new Vue({
+      el: '#button',
+      vuetify: new Vuetify(),
+    })
+  </script>     
 </body>
-<!-- partial -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/vuetify/2.6.7/vuetify.min.js'></script>
-<script src='https://cdn.jsdelivr.net/npm/vue/dist/vue.js'></script><script  src="./script.js"></script>
-
-</body>
-</html>

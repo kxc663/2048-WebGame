@@ -230,4 +230,4 @@ function tryAgain(){
   document.getElementById("pause").style.display = "none";
   document.getElementById("gameOver").style.display = "none";
   mainGame.begin();
-}
+}  
