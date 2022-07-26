@@ -216,18 +216,28 @@ document.onkeydown = function(){
   }
 }
 
-/*
-function tryAgain() {
+// Start main game
+function start(){          
+  document.getElementById("gameStart").style.display = "none";
   mainGame.begin();
-  document.getElementById("pause").style.display = "none";
-  document.getElementById("gameOver").style.display = "none";
-}*/
-
-mainGame.begin();
-console.log(mainGame.blockNumber);
+}
 
 function tryAgain(){
   document.getElementById("pause").style.display = "none";
   document.getElementById("gameOver").style.display = "none";
   mainGame.begin();
+}  
+
+function back(){
+  document.getElementById("record").style.display = "none";
+  document.getElementById("gameStart").style.display = "block";
+}
+
+function overBack(){
+  document.getElementById("gameOver").style.display = "none";
+  document.getElementById("gameStart").style.display = "block";
+}
+function record(){
+  document.getElementById("highestScore2").innerHTML = localStorage.getItem("highestScore");
+   document.getElementById("record").style.display = "block";
 }

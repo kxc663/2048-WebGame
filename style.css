@@ -1,8 +1,8 @@
 body{
-  background: grey;
+  background: white;
   text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
 }
-
 
 #score{
   color: red;
@@ -17,6 +17,7 @@ body{
   height: 530px;
   background-color: #ffd494;
   margin: 0px auto;
+  border-radius: 15px;
 }
 
 #block00{
@@ -29,6 +30,7 @@ body{
   color: black;
   float: left;
   margin: 10px 0px 0px 10px;
+  border-radius: 15px;
 }
 
 #block01{
@@ -41,6 +43,7 @@ body{
   color: black;
   float: left;
   margin: 10px 0px 0px 10px;
+  border-radius: 15px;
 }
 
 #block02{
@@ -53,6 +56,7 @@ body{
   color: black;
   float: left;
   margin: 10px 0px 0px 10px;
+  border-radius: 15px;
 }
 
 #block03{
@@ -65,6 +69,7 @@ body{
   color: black;
   float: left;
   margin: 10px 0px 0px 10px;
+  border-radius: 15px;
 }
 
 #block10{
@@ -77,6 +82,7 @@ body{
   color: black;
   float: left;
   margin: 10px 0px 0px 10px;
+  border-radius: 15px;
 }
 
 #block11{
@@ -89,6 +95,7 @@ body{
   color: black;
   float: left;
   margin: 10px 0px 0px 10px;
+  border-radius: 15px;
 }
 
 #block12{
@@ -101,6 +108,7 @@ body{
   color: black;
   float: left;
   margin: 10px 0px 0px 10px;
+  border-radius: 15px;
 }
 
 #block13{
@@ -113,6 +121,7 @@ body{
   color: black;
   float: left;
   margin: 10px 0px 0px 10px;
+  border-radius: 15px;
 }
 
 #block20{
@@ -125,6 +134,7 @@ body{
   color: black;
   float: left;
   margin: 10px 0px 0px 10px;
+  border-radius: 15px;
 }
 
 #block21{
@@ -137,6 +147,7 @@ body{
   color: black;
   float: left;
   margin: 10px 0px 0px 10px;
+  border-radius: 15px;
 }
 
 #block22{
@@ -149,6 +160,7 @@ body{
   color: black;
   float: left;
   margin: 10px 0px 0px 10px;
+  border-radius: 15px;
 }
 
 #block23{
@@ -161,6 +173,7 @@ body{
   color: black;
   float: left;
   margin: 10px 0px 0px 10px;
+  border-radius: 15px;
 }
 
 #block30{
@@ -173,6 +186,7 @@ body{
   color: black;
   float: left;
   margin: 10px 0px 0px 10px;
+  border-radius: 15px;
 }
 
 #block31{
@@ -185,6 +199,7 @@ body{
   color: black;
   float: left;
   margin: 10px 0px 0px 10px;
+  border-radius: 15px;
 }
 
 #block32{
@@ -197,6 +212,7 @@ body{
   color: black;
   float: left;
   margin: 10px 0px 0px 10px;
+  border-radius: 15px;
 }
 
 #block33{
@@ -209,8 +225,20 @@ body{
   color: black;
   float: left;
   margin: 10px 0px 0px 10px;
+  border-radius: 15px;
 }
 
+/*game start page setting*/
+#gameStart{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background: #ffd494;
+}
+
+/*game over page setting*/
 #gameOver{
   position:absolute;
   top:0;
@@ -218,9 +246,21 @@ body{
   width:100%;
   height:100%;
   background: #ffd494;
-  
+  display: none;
 }
 
+/*record page setting*/
+#record{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background: #ffd494;
+  display: none;
+}
+
+/*pause page setting*/
 #pause{
   position:absolute;
   top:0;
@@ -229,13 +269,13 @@ body{
   height:100%;
   background: rgba(255, 212, 148, 0.55);
   display: none;
-  
 }
 
 h2{
   padding-top: 5px;
   padding-bottom: 5px;
 }
+
 p{
   width:400px;
   margin:0 auto;

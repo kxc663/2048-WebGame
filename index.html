@@ -2,7 +2,7 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - 2048 Beta 2.0</title>
+  <title>CodePen - 2048 Beta 4.0</title>
   <link rel="stylesheet" href="./style.css">
 
 </head>
@@ -40,15 +40,33 @@
     <div id = "block30"></div>
     <div id = "block31"></div>
     <div id = "block32"></div>
-    <div id = "block33"></div>
+    <div id = "block33"></div> 
+  </div> <br/> <br/> <br/>
+    <h5> Produced by Kaitao Chen </h5>
+  
+  <div id = "gameStart">
+    <p>
+      Welcome to 2048! 
+    </p> <br/>
+    <v-btn id="button" elevation="2" large outlined onclick="start()">Start</v-btn> <br/><br/>
+    <v-btn id="button" elevation="2" large outlined onclick="record()">Record</v-btn> <br/> <br/> <br/> <br/> <br/>
+    <h5> Produced by Kaitao Chen </h5>
   </div>
   
   <div id = "gameOver">
     <p> 
       Game Over! <br/>
-      Score: <span id = "finalScore"> 0 </span> <br/>
-    </p>
-    <v-btn id="button" elevation="2" large outlined onclick="tryAgain()">Try again!</v-btn>
+      Score: <span id = "finalScore"> 0 </span> 
+    </p> <br/>
+    <v-btn id="button" elevation="2" large outlined onclick="tryAgain()">Try again!</v-btn> <br/><br/>
+    <v-btn id="button" elevation="2" large outlined onclick="overBack()">Back</v-btn>
+  </div>
+  
+  <div id = "record">
+    <p> 
+      Highest Score: <span id = "highestScore2"></span> 
+    </p> <br/>
+    <v-btn id="button" elevation="2" large outlined onclick="back()">Back</v-btn>
   </div>
   
   <div id = "pause"></div>
@@ -57,9 +75,17 @@
   <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
   <script>
     new Vue({
-      el: '#button',
+      el: '#gameStart',
       vuetify: new Vuetify(),
     })
+    new Vue({
+       el: '#gameOver',
+      vuetify: new Vuetify(),
+    })    
+    new Vue({
+       el: '#record',
+      vuetify: new Vuetify(),
+    }) 
   </script>     
 </body>
 <!-- partial -->
