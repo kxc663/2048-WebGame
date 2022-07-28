@@ -41,8 +41,10 @@
     <div id = "block31"></div>
     <div id = "block32"></div>
     <div id = "block33"></div> 
-  </div> <br/> <br/> <br/>
-    <h5> Produced by Kaitao Chen </h5>
+  </div> <br/>
+  <div id = "setting">
+    <v-btn id="button" elevation="2" large outlined onclick="setting()">Setting</v-btn>
+  </div>
   
   <div id = "gameStart">
     <p>
@@ -53,6 +55,7 @@
     <h5> Produced by Kaitao Chen </h5>
   </div>
   
+  <!-- gameover page-->
   <div id = "gameOver">
     <p> 
       Game Over! <br/>
@@ -61,7 +64,8 @@
     <v-btn id="button" elevation="2" large outlined onclick="tryAgain()">Try again!</v-btn> <br/><br/>
     <v-btn id="button" elevation="2" large outlined onclick="overBack()">Back</v-btn>
   </div>
-  
+
+  <!-- record page-->
   <div id = "record">
     <p> 
       Highest Score: <span id = "highestScore2"></span> 
@@ -69,11 +73,21 @@
     <v-btn id="button" elevation="2" large outlined onclick="back()">Back</v-btn>
   </div>
   
-  <div id = "pause"></div>
+  <!-- pause page-->
+  <div id = "pause"> <br/><br/><br/>
+    <v-btn id="Resume" elevation="2" large outlined  onclick="resume()">Resume</v-btn> <br/><br/>
+    <v-btn id="Restart" elevation="2" large outlined onclick="restart()">Restart</v-btn> <br/><br/>
+      <v-btn id="Quit" elevation="2" large outlined onclick="quit()">Quit</v-btn>
+  </div>
+  <div id = "pause2"></div>
   
   <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
   <script>
+    new Vue({
+      el: '#setting',
+      vuetify: new Vuetify(),
+    })
     new Vue({
       el: '#gameStart',
       vuetify: new Vuetify(),
@@ -84,6 +98,10 @@
     })    
     new Vue({
        el: '#record',
+      vuetify: new Vuetify(),
+    }) 
+    new Vue({
+       el: '#pause',
       vuetify: new Vuetify(),
     }) 
   </script>     

@@ -30,9 +30,9 @@ var mainGame = {
     document.getElementById("score").innerHTML = this.score;
     document.getElementById("highestScore").innerHTML = localStorage.getItem("highestScore");
     if(this.gameOver()){
-        document.getElementById("pause").style.display = "block";
+        document.getElementById("pause2").style.display = "block";
       setTimeout(() => {
-        document.getElementById("pause").style.display = "none";
+        document.getElementById("pause2").style.display = "none";
         document.getElementById("gameOver").style.display = "block";
         document.getElementById("finalScore").innerHTML = this.score;}, 5000);
     }
@@ -223,7 +223,7 @@ function start(){
 }
 
 function tryAgain(){
-  document.getElementById("pause").style.display = "none";
+  document.getElementById("pause2").style.display = "none";
   document.getElementById("gameOver").style.display = "none";
   mainGame.begin();
 }  
@@ -237,7 +237,26 @@ function overBack(){
   document.getElementById("gameOver").style.display = "none";
   document.getElementById("gameStart").style.display = "block";
 }
+
 function record(){
   document.getElementById("highestScore2").innerHTML = localStorage.getItem("highestScore");
    document.getElementById("record").style.display = "block";
+}
+
+function setting(){
+   document.getElementById("pause").style.display = "block";
+}
+
+function resume(){
+  document.getElementById("pause").style.display = "none";
+}
+
+function restart(){
+  document.getElementById("pause").style.display = "none";
+  mainGame.begin();
+}
+
+function quit(){
+  document.getElementById("pause").style.display = "none";
+  document.getElementById("gameStart").style.display = "block";
 }
